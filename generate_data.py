@@ -19,10 +19,11 @@ HUBS = [
     ("HUB21", "Bhubaneswar", "East", 3, 390), ("HUB22", "Dehradun", "North", 3, 350),
     ("HUB23", "Siliguri", "East", 3, 310), ("HUB24", "Agartala", "East", 3, 270),
 ]
-DIST_MU = [180, 320, 480]
+DIST_MU = [180, 320, 480]      # mean lane distance (km) for hub tier 1 / 2 / 3
 DIST_SD = [50, 90, 150]
-STOPS_MU = [55, 70, 85]
-HUB_EFFECT = [0, 2, 4]
+STOPS_MU = [55, 70, 85]        # mean stops on the rider route for hub tier 1 / 2 / 3
+HUB_EFFECT = [0, 2, 4]         # extra hours for hub tier 1 / 2 / 3
+# How a hub really operates (1 = metro-like, 2 = regional, 3 = stretched). Four hubs operate unlike their tier label.
 OPERATING_TIER = {"HUB07": 2, "HUB13": 3, "HUB15": 3, "HUB22": 2}
 BASE_HOURS = {"Express": 10, "Standard": 28, "Economy": 58}
 
