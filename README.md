@@ -192,5 +192,3 @@ Validation gates include: **24/1,224/48** raw generator counts; **1,200** histor
 4. No probability calibration or explicit INR cost model for missed alerts versus customer calls and escalations.
 5. Hub clusters use only four aggregate measures and **50 historical shipments per hub**, with K fixed for operational reasons.
 6. The batch script is not a live service; concept drift, data quality and workload need monitoring before any real rollout.
-
-The final submission is the public [GitHub repository on main](https://github.com/SQB-KHN/masai_capstone/tree/main). All performance numbers above are drawn from named CSV outputs rather than typed as fixed model targets.
